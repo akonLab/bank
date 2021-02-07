@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="/addUser">
+    <input type="text" name="name" placeholder="name">
+    <input type="text" name="password" placeholder="password">
+    <input type="text" name="phone" placeholder="phone">
+
+    <input type="submit">
+</form>
+{{#users}}
+<p>
+   id: {{user_id}} \  name: {{user_name}} \ password: {{user_password}} \ phone: {{user_phone}}
+</p>
+{{/users}}
+</body>
+</html>
